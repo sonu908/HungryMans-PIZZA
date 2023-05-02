@@ -1,0 +1,95 @@
+<div class="container" style="
+    border: 1px solid rgba(0, 0, 0, 0.255);
+    border-radius: 36px;
+    padding: 3%;
+  ">
+  <div class="whole">
+    <div class="_content_head">
+      <h1>Your Orders</h1>
+      <div class="button">
+        <h2> Total amount : <span style="          font-family: 'Barlow Condensed', sans-serif;
+          "> {{ totalPrice }} ₹ </span></h2>
+        <!-- paypal view -->
+        <div class="completed col-4" style="   border: 1px solid rgba(0, 0, 0, 0.255);
+        border-radius: 36px;
+        padding: 1%; background-color: rgba(0, 128, 0, 0.264);
+
+      " *ngIf="showSuccess">
+          <p style="margin: auto;">Payment Success, Your Pizza Is on the Way</p>
+        </div>
+
+        <div class="failed" *ngIf="showCancel">
+          <p>Payment Failed, Please Try Again ! </p>
+        </div>
+
+        <div class="erroe" *ngIf="showError">
+          <p>Some Error Occured</p>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" style="margin-top: 14px;" class="btn_confirm" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" *ngIf="!paymentstatus" (click)="makepayment()">
+        confirm
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Payment Page
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+              <!-- (submit)="saveaddress_pending(pending) -->
+                <label for="name">Name:</label>
+                <input id="name" [(ngModel)]="pending.name" name="name" type="text" />
+
+                <label for="phone">Phone:</label>
+                <input id="phone" [(ngModel)]="pending.phone" name="phone" type="text" />
+
+                <label for="address">Address:</label>
+                <input id="address" [(ngModel)]="pending.address" name="address" type="text" />
+                <button style="margin: auto; margin-top: 20px;" (click)="add_and_item(pending,orders)">Submit</button>
+
+              </form>
+              <!-- <button style="margin: auto; margin-top: 20px;" type="submit">Submit</button> -->
+
+            </div>
+
+            <div *ngIf="paymentstatus" class="paymentsts">
+              <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+            </div>
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="__row_display">
+      <div class="row ordered" *ngFor="let item of orders">
+        <div class="col image">
+          <img [src]="item.image" style="width: 200px" alt="" />
+        </div>
+
+        <div class="col-4 details">
+          <P style="font-size: 22px;">{{ item.name }}</P>
+          <p style="          font-family: 'Barlow Condensed', sans-serif;
+          ">{{ item.price }}</p>
+          <button id="button_click" style="margin-top: 19px;" (click)="removeSelected(item.id)">cancel</button>
+
+        </div>
+
+        <!-- <div style="width: 150px;"  class="col-4 buttons">
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

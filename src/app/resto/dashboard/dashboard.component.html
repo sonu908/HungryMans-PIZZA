@@ -1,0 +1,138 @@
+<div class="container"
+  style="border: 1px solid rgba(0, 0, 0, 0.255); border-radius: 36px; padding: 4%;  min-height: 80vh;">
+
+
+  <h1>Welcome Sonu </h1>
+
+  <p>Today Menu</p>
+
+  <div class="content" *ngFor="let item of menuitems"
+    style="border: 1px solid rgba(0, 0, 0, 0.255); border-radius: 36px; padding: 4%; ">
+
+    <img [src]="item.image" style="width: 200px;" alt="">
+
+    <div class="content_det">
+      <p>{{item.name}}</p>
+      <button class="removemenu" (click)="deletemenuitem(item.id)">Mark As Over</button>
+    </div>
+
+  </div>
+
+
+  <div class="modal-body"
+    style=" display: flex; border: 1px solid rgba(0, 0, 0, 0.255); margin-top: 5pc;    border-radius: 36px; padding: 4%; ">
+    <div class="col-6">
+
+      <h1 style="margin: 40px;">Add a New Menu</h1>
+      <form (submit)="addmenu(additem)">
+
+        <label for="name">id:</label>
+        <input id="id" [(ngModel)]="additem.id" name="id" type="text" />
+
+        <label for="name">Name:</label>
+        <input id="name" [(ngModel)]="additem.name" name="name" type="text" />
+
+        <label for="name">Description:</label>
+        <input id="description" [(ngModel)]="additem.description" name="description" type="text" />
+
+        <label for="name">Price:</label>
+        <input id="name" [(ngModel)]="additem.price" name="price" type="text" />
+
+        <label for="image">Image:</label>
+        <input id="image" [(ngModel)]="additem.image" name="image" type="text" />
+
+        <label for="crust">Crust:</label>
+        <input id="crust" [(ngModel)]="additem.crust" name="crust" type="text" />
+
+        <label for="catchy_phrase">About the Pizza:</label>
+        <input id="catchy_phrase" [(ngModel)]="additem.catchy_phrase" name="catchy_phrase" type="text" />
+
+        <label id="markbox" for="veg">veg:<input style="width: 20px;" id="veg" [(ngModel)]="additem.veg" name="veg"
+            type="checkbox" />
+        </label>
+
+        <button id="submitbutton" style="margin: auto; margin-top: 20px;" type="submit">Add To MENU</button>
+      </form>
+    </div>
+    <div class="col-4" style="padding: 4%; margin: auto;">
+      <img src="https://iili.io/H88JpgS.png" style="border-radius: 44px;"
+        alt="pexels polina tankilevitch 4109111 removebg preview">
+    </div>
+  </div>
+
+  <div class="pendingorders"
+    style="margin-top: 40px;  border: 1px solid rgba(0, 0, 0, 0.255); border-radius: 36px; padding: 4%; ">
+
+
+    <h1>Pending delivery</h1>
+
+
+    <div class="pendingorders" *ngFor="let item of pendingorders"
+      style="margin-top: 40px; display: flex;  border: 1px solid rgba(0, 0, 0, 0.255); border-radius: 36px; padding: 4%; ">
+
+      <div class="col-6">
+        <img [src]="item.orders[0].image" style="width: 150px;" alt="">
+        <img [src]="item.orders[1]?.image" style="width: 150px;" alt="">
+        <img [src]="item.orders[2]?.image" style="width: 150px;" alt="">
+
+      </div>
+      <div class="col-2">
+      <h3> Orders</h3>
+        <p>{{item.orders[0].name}} , <br> {{item.orders[1]?.name}}   </p>
+        <p>Payment Status : <span style="color: rgba(0, 128, 0, 0.511)
+        ;">Paid</span></p>
+        <p style="font-size: smaller;">Transaction-ID: <br> <span style="          font-family: 'Barlow Condensed', sans-serif;
+          ">{{randomNum}}</span></p>
+
+
+      </div>
+      <div class="col-3" style="padding-left: 2%;">
+
+        <h3>Address</h3>
+        <p>Name :  {{item.pending.name}}</p>
+        <p>Phone : {{item.pending.phone}}</p>
+        <p>Address : {{item.pending.address}}</p>
+
+
+        <!-- Button trigger modal
+        <button type="button" class="btn btn-primary" id="viewmorebutton" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          view details
+        </button>
+
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p>Transaction-ID:{{randomNum}}</p>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+
+
+                <h3 style="padding: 2%; margin-bottom: 15px; "  >Delivery address</h3>
+                <p>Name :  {{item.pending.name}}</p>
+                <p>Phone : {{item.pending.phone}}</p>
+                <p>Address : {{item.pending.address}}</p>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+</div>

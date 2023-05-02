@@ -1,0 +1,118 @@
+.__image {
+  background-image: url("https://iili.io/HvYGw8B.png");
+  height: 100vh;
+  width: 600px;
+  background-size: cover;
+  position: absolute;
+}
+.__content h1 {
+  display: flex;
+  justify-content: end;
+  padding-right: 14%;
+  padding-top: 10%;
+  font-size: 93px;
+}
+.__content small {
+  display: flex;
+  justify-content: end;
+  padding-right: 14%;
+  font-size: 12px;
+}
+.__content .__buttons {
+  display: flex;
+  justify-content: end;
+  padding: 24%;
+}
+.__buttons button {
+  border: 0px;
+  padding: 2%;
+}
+.__menu_img {
+  display: flex;
+  justify-content: end;
+}
+.__menu {
+  margin-top: 35%;
+}
+.card {
+  width: 190px;
+  height: 274px;
+  padding: 0.4em;
+  border: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: 60%;
+  border-radius: 6px 6px 0 0;
+}
+.__multiple .__pizza {
+  transition: all 2s ease-in-out;
+}
+.__multiple{
+  transition: all 2s ease-in-out;
+
+}
+.__multiple:hover .__pizza {
+  transition: all 2s ease-in-out;
+  transform: rotate(4deg);
+}
+.__multiple:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: all ease-in-out 0.5s;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+  letter-spacing: 3px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+/*  */
+.card-image {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.card-image img {
+  padding: 2%;
+  max-height: 300px;
+  object-fit: contain;
+}
+.__buttons button {
+  padding: 2%;
+  border: 1px solid rgba(0, 0, 0, 0.227);
+  border-radius: 36px;
+  background-color: transparent;
+}

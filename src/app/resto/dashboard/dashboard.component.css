@@ -1,0 +1,88 @@
+.content {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  transition: 0.5s all ease-in-out;
+}
+.content:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.pendingorders:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.removemenu {
+  border: 1px solid rgba(0, 0, 0, 0.227);
+  border-radius: 36px;
+  padding: 5%;
+  min-width: 200px;
+  background-color: transparent;
+  transition: all ease-in-out 0.5s;
+}
+.removemenu:hover {
+  letter-spacing: 1px;
+  transition: all ease-in-out 1s;
+  background-color: rgba(247, 96, 96, 0.188);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form #id,
+#name,
+#image,
+#crust {
+  height: 40px;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.429);
+  padding: 4%;
+}
+form #catchy_phrase,
+#description {
+  height: 150px;
+  background-color: transparent;
+  border-radius: 40px;
+  padding: 4%;
+  border: 1px solid rgba(0, 0, 0, 0.429);
+}
+form label {
+  margin-left: 20px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+#markbox {
+  font-size: 30px;
+  padding: 2%;
+}
+#submitbutton {
+  border: 1px solid rgba(0, 0, 0, 0.227);
+  border-radius: 36px;
+  background-color: transparent;
+  transition: all ease-in-out 0.5s;
+  padding: 2%;
+}
+#submitbutton:hover{
+  letter-spacing: 2px;
+  background-color: rgba(0, 128, 0, 0.233);
+}
+.modal-body{
+  transition: all ease-in-out 1s;
+
+}
+.modal-body:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+#viewmorebutton {
+  border: 1px solid rgba(0, 0, 0, 0.227);
+  border-radius: 36px;
+  background-color: transparent;
+  transition: all ease-in-out 0.5s;
+  padding: 4%;
+  height: 50px;
+  color: #000;
+}
+#viewmorebutton:hover{
+  background-color: rgba(40, 153, 239, 0.233);
+}

@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.255);
+  border-radius: 36px;
+  width: 40vw;
+}
+.content #name {
+  font-size: 70px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.content p {
+  text-align: center;
+}
+.content_two{
+  display: flex;
+  flex-direction: column;
+  transition: all ease-in-out .5s;
+
+}
+.content_two label{
+  padding-top: 30px;
+padding-bottom: 10px;
+text-align: center;
+}
+.content_two #pwd{
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.255);
+  border-radius: 36px;
+  padding: 3%;
+
+}
+.content_two:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+}
+
+button {
+  border: 1px solid rgba(0, 0, 0, 0.227);
+  border-radius: 36px;
+  padding: 5%;
+  min-width: 100px;
+  background-color: transparent;
+  transition: all ease-in-out 0.5s;
+}
+ button:hover {
+  letter-spacing: 3px;
+  transition: all ease-in-out 1s;
+  background-color: rgba(128, 128, 128, 0.188);
+}
+.buttons{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+}

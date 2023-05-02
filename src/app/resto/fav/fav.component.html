@@ -1,0 +1,24 @@
+<div class="container" style="border: 1px solid rgba(0, 0, 0, 0.255); border-radius: 36px; padding: 3%;">
+
+  <div class="whole">
+
+    <h1>your favorite</h1>
+
+<div class="row">
+
+      <div class="card" *ngFor="let item of fav">
+        <div class="img">
+          <img [src]="item.image" style="width: 250px;" alt="">
+        </div>
+        <div class="content">
+          <h3>{{item.name}}</h3>
+          <p>{{item.catchy_phrase}}</p>
+        </div>
+
+        <button (click)="deletefav(item.id)" >remove</button>
+      </div>
+
+
+</div>
+</div>
+</div>

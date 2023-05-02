@@ -1,0 +1,56 @@
+<div
+  class="container __whole"
+  style="
+    border: 1px solid rgba(0, 0, 0, 0.255);
+    border-radius: 36px;
+    padding: 3%;
+  "
+>
+  <div class="row">
+    <div class="col-4">
+      <h1>{{ name }}</h1>
+      <p style="font-size: medium; opacity: 60%">{{ catchy_phrase }}</p>
+
+      <!-- <span *ngIf="__veg" class="badge rounded-pill text-bg-success">Veg</span>
+      <span *ngIf="!__veg" class="badge rounded-pill text-bg-danger">Non-Veg</span> -->
+
+      <p
+        style="
+          font-size: 24px;
+          color: rgba(0, 0, 0, 0.801);
+          font-family: 'Barlow Condensed', sans-serif;
+        "
+      >
+        at only : {{ price }}
+      </p>
+
+      <div class="__content_sub">
+        <p style="font-size: 25px">Whats in it?</p>
+        <p>
+          <small>{{ crust }} Crust </small>
+        </p>
+        <small>{{ description }}</small>
+      </div>
+      <div class="button">
+        <button
+          id="fav"
+          (click)="addtofavorite(__pizza_details)"
+          style="width: 150px"
+        >
+          add to favorite
+        </button>
+        <button
+          (click)="addorder(__pizza_details)"
+          id="add"
+          style="width: 150px"
+        >
+          add to cart
+        </button>
+      </div>
+    </div>
+    <div class="col-8">
+      <img src="{{ image }}" alt="" style="height: 600px" />
+    </div>
+  </div>
+</div>
+

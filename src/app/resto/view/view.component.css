@@ -1,0 +1,80 @@
+
+.banner {
+  /* background-image: url('https://iili.io/HvwTZ6F.png'); */
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+h1{
+  font-size: 80px;
+  letter-spacing: 4px;
+}
+.__content_sub{
+  padding: 10%;
+  border: 1px solid rgba(0, 0, 0, 0.227) ;
+  border-radius: 36px;
+  margin-bottom:7%;
+  transition: all ease-in-out .5s;
+
+}
+.__content_sub:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: all ease-in-out .5s;
+}
+.__content_sub2{
+  padding: 10%;
+  border: 1px solid rgba(0, 0, 0, 0.227) ;
+  border-radius: 36px;
+  margin-bottom:7%;
+  transition: all ease-in-out .5s;
+
+}
+.__content_sub2:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: all ease-in-out .5s;
+}
+.button:hover{
+  transition: all ease-in-out .5s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+}
+.col-8 {
+  text-align: center;
+  position: sticky;}
+.button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+  border: 1px solid rgba(0, 0, 0, 0.227) ;
+  border-radius: 36px;
+  transition: all ease-in-out .5s;
+
+}
+.button button{
+  border: 1px solid rgba(0, 0, 0, 0.227) ;
+  border-radius: 36px;
+  padding: 5%;
+  background-color: transparent;
+  transition: all ease-in-out .5s;
+}
+.button button:hover{
+transition: all ease-in-out .5s;
+}
+.button #fav:hover
+{
+  transform: translate(10px);
+  background-color: rgba(255, 0, 0, 0.114);
+}
+.button #add:hover
+{
+  transform: translate(-10px);
+  background-color: rgba(94, 255, 0, 0.114);
+}
+.__range input{
+width: 100%;
+}
+
+fieldset input {
+    margin: 0.4rem;
+}

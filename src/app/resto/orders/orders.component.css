@@ -1,0 +1,80 @@
+h1 {
+  font-size: 70px;
+  letter-spacing: 4px;
+}
+.ordered {
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.255);
+  border-radius: 36px;
+  padding: 3%;
+  min-height: 270px;
+}
+.buttons button {
+  border: 1px solid rgba(0, 0, 0, 0.227);
+  border-radius: 36px;
+  padding: 5%;
+  width: 100px;
+  background-color: transparent;
+  transition: all ease-in-out 0.5s;
+}
+.buttons button:hover {
+  transition: all ease-in-out 0.5s;
+}
+.row:hover {
+  transition: all ease-in-out 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.row {
+  transition: all ease-in-out 0.5s;
+}
+.__row_display {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ordered {
+  width: 500px;
+}
+.buttons {
+  display: flex;
+}
+button {
+  border: 1px solid rgba(0, 0, 0, 0.227);
+  border-radius: 36px;
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form #phone,
+#name {
+  height: 40px;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.429);
+  padding: 4%;
+}
+form #address {
+  height: 100px;
+  background-color: transparent;
+  border-radius: 40px;
+  padding: 4%;
+  border: 1px solid rgba(0, 0, 0, 0.429);
+}
+form label {
+  margin-left: 20px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+.btn_confirm:hover {
+  border: 1px solid rgba(0, 0, 0, 0.429);
+  transition: all ease-in-out 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  background-color: rgba(0, 128, 0, 0.221);
+}
+#button_click:hover
+{
+background-color: rgba(255, 0, 0, 0.182);
+}
