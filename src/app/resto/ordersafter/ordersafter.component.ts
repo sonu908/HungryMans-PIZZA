@@ -11,7 +11,7 @@ transID:any
 shouldReload:boolean = true;
 
 ngOnInit(): void {
-  this.transID = Math.floor(Math.random() * 9000000000) + 1000000000;
+  this.transID = 4532000000 + Math.floor(Math.random() * 900000000);
 
   }
 

@@ -16,7 +16,7 @@ export class AdminComponent implements OnInit {
   constructor(private api: ApiService, public router: Router, public Renderer:Renderer2 ) { }
   ngOnInit(): void {
     this.admindet()
-    this.getLocation()
+    // this.getLocation()
   }
 
   admindet() {
@@ -44,15 +44,15 @@ export class AdminComponent implements OnInit {
       alert('wrong password')
     }
   }
-  getLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        console.log(position.coords.latitude, position.coords.longitude);
-      });
-    } else {
-      console.log("Geolocation is not supported by this browser.");
-    }
-  }
+  // getLocation() {
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition((position) => {
+  //       console.log(position.coords.latitude, position.coords.longitude);
+  //     });
+  //   } else {
+  //     console.log("Geolocation is not supported by this browser.");
+  //   }
+  // }
 
 
 

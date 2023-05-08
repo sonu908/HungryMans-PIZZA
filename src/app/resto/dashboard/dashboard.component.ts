@@ -12,11 +12,11 @@ export class DashboardComponent implements OnInit {
 
   menuitems: any
 
-  pendingorders:any={}
+  pendingorders: any = {}
 
-  randomNum:any
+  randomNum: any
 
-finalprice:any
+  finalprice: any
 
 
   constructor(public api: ApiService) { }
@@ -45,27 +45,27 @@ finalprice:any
 
   }
 
-  addmenu(data:any){
+  addmenu(data: any) {
     this.api.addmenu(data).subscribe((data: any) => {
       console.log(data);
-location.reload()
+      location.reload()
 
     })
   }
-getallpendingorders(){
-  this.api.getdetailof_pendingorders().subscribe((data: any) => {
-    console.log(data,'pendingorders');
-this.pendingorders=data
-console.log(this.pendingorders);
-this.finalprice = this.pendingorders.orders[0].price + this.pendingorders.orders[1]?.price
-  })
-}
+  getallpendingorders() {
+    this.api.getdetailof_pendingorders().subscribe((data: any) => {
+      console.log(data, 'pendingorders');
+      this.pendingorders = data
+      console.log(this.pendingorders);
+      this.finalprice = this.pendingorders.orders[0].price + this.pendingorders.orders[1]?.price
+    })
+  }
 
 
 
-randomnumber(){
-  this.randomNum = Math.floor(Math.random() * 9000000000) + 1000000000;
-  console.log(this.randomNum);
+  randomnumber() {
+    this.randomNum = 4532000000 + Math.floor(Math.random() * 900000000);
+    console.log(this.randomNum);
   }
 
 }
