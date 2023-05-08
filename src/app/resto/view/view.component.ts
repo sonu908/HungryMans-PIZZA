@@ -103,7 +103,7 @@ export class ViewComponent implements OnInit {
     // };
     this.api.addoders(pizza).subscribe((data: any) => {
 
-      alert("Added")
+      alert("Order Added!");
 
       console.log(data);
 
@@ -112,9 +112,9 @@ export class ViewComponent implements OnInit {
 
 
   addtofavorite(fav: any) {
-    
+
     this.api.addfav(fav).subscribe((data: any) => {
-      alert("added")
+      alert(`${fav.name} added to favorites`)
       console.log(data);
 
     })

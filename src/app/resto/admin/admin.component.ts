@@ -22,6 +22,8 @@ export class AdminComponent implements OnInit {
   admindet() {
 
     this.api.getadmindetails().subscribe((result: any) => {
+
+
       this.adminname = result[0].name
       this.passwordverify = result[0].password
 

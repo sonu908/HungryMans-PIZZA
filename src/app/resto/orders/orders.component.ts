@@ -149,17 +149,19 @@ private initConfig(): void {
 
 
 
-saveaddress_pending(pending:any){
-  this.api.pendingorder(pending).subscribe((data:any)=>{
-console.log(data,'pending');
+// saveaddress_pending(pending:any){
+//   this.api.pendingorder(pending).subscribe((data:any)=>{
+// console.log(data,'pending');
 
-  })
-}
+//   })
+// }
 
 
 add_and_item(pending:any,orders:any)
 {
   this.api.postaddrss_items(pending,orders).subscribe((result:any)=>{
+
+    alert("Please Choose a Payment Method")
 
   })
 }

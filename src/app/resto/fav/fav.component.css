@@ -37,3 +37,8 @@ button{
   border: 1px solid rgba(0, 0, 0, 0.099);
 background-color: transparent;
 }
+button:hover {
+
+background-color: rgba(255, 0, 0, 0.26);
+
+}
