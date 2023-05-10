@@ -11,21 +11,21 @@ Hungryman's Pizza is a web application developed using the MEAN stack (MongoDB, 
 
 <h3>HOME-PAGE</h3>
 
-<img src="https://iili.io/HSx0pqP.png" alt="PizzaFront" border="0">
+<img src="https://iili.io/HSx0pqP.png" alt="PizzaFront">
 
 
 <h3>VIEW-PAGE</h3>
-<img src="https://iili.io/HSx1DyG.png" alt="PizzaFront" border="0">
+<img src="https://iili.io/HSx1DyG.png" alt="PizzaFront">
 
 
 <h3>ORDERS-PAGE</h3>
-<img src="https://iili.io/HSxGnJn.png" alt="PizzaFront" border="0">
+<img src="https://iili.io/HSxGnJn.png" alt="PizzaFront">
 
 <h3>FAVOURITE-PAGE</h3>
-<img src="https://iili.io/HSxMSyu.png" alt="PizzaFront" border="0">
+<img src="https://iili.io/HSxMSyu.png" alt="PizzaFront">
 
 <h3>ADMIN-PANEL</H3>
-<img src="https://iili.io/HSxXQF2.png" alt="PizzaFront" border="0">
+<img src="https://iili.io/HSxXQF2.png" alt="PizzaFront">
 
 # Features
 

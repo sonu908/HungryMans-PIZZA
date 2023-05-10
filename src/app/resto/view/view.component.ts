@@ -70,11 +70,6 @@ export class ViewComponent implements OnInit {
       this.image = this.__pizza_details.image
       this.catchy_phrase = this.__pizza_details.catchy_phrase
       this.price = this.__pizza_details.price
-      // this.priceaddon = this.__pizza_details.Price
-      // this.nameaddon = this.__pizza_details.Price
-      // this.veg=this.__pizza_details.veg
-
-
     })
   }
   //view all toppings
@@ -97,10 +92,6 @@ export class ViewComponent implements OnInit {
 
 
   addorder(pizza: any) {
-    // const orderData = {
-    //   pizza: pizza,
-    //   selectedToppings: this.selectedToppings
-    // };
     this.api.addoders(pizza).subscribe((data: any) => {
 
       alert("Order Added!");
@@ -118,15 +109,7 @@ export class ViewComponent implements OnInit {
       console.log(data);
 
     })
-
-
-
   }
-
-
-
-
-
 }
 
 ////////////////////////////////////////////

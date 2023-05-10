@@ -16,9 +16,11 @@
       bursting with flavor, every bite is a taste sensation. Order now and experience pizza perfection!"
     </div>
   </div>
+
   <div class="__menu_img">
     <img src="https://iili.io/HvaMjEb.png" style="width: 500px;">
   </div>
+  
   <div class="__content_bottom" style="margin-top: -500px;">
     <h1 style="font-size: 93px;">today specials</h1>
     <small> From the dough to the toppings, everything is made in-house and with attention to detail, resulting in a
@@ -28,50 +30,15 @@
   <div class="__menu" id="menu">
     <div class="row">
       <div class="card-image">
-
         <div routerLink="view/{{item.id}}" class="__multiple"
           style="border: 1px solid rgba(0, 0, 0, 0.163); border-radius: 30px; padding: 2%; margin-right: 18px;"
           *ngFor="let item of menuitems">
-
           <img class="__pizza" src={{item.image}} width="300px">
           <div class="category"> {{item.name}} </div>
           <div class="heading">{{item.description}}</div>
-
-
         </div>
-        <!--
-        <div class="__multiple" style="border: 1px solid rgba(0, 0, 0, 0.163); border-radius: 30px; padding: 2%; margin-right: 18px;">
-
-          <img src="https://iili.io/Hv073Mv.png" width="300px">
-          <div class="category"  > name </div>
-          <div class="heading"> A heading that must span over two lines</div>
-
-
-        </div>
-        <div class="__multiple" style="border: 1px solid rgba(0, 0, 0, 0.163); border-radius: 30px; padding: 2%; margin-right: 18px;">
-
-          <img src="https://iili.io/Hv073Mv.png" width="300px">
-          <div class="category"  > name </div>
-          <div class="heading"> A heading that must span over two lines</div>
-
-
-        </div>
-        <div class="__multiple" style="border: 1px solid rgba(0, 0, 0, 0.163); border-radius: 30px; padding: 2%; margin-right: 18px;">
-
-          <img src="https://iili.io/Hv073Mv.png" width="300px">
-          <div class="category"  > name </div>
-          <div class="heading"> A heading that must span over two lines</div>
-
-
-        </div>
- -->
-
       </div>
-
-
-
     </div>
   </div>
-
 
 </div>

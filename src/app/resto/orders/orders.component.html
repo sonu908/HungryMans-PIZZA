@@ -45,7 +45,6 @@
             </div>
             <div class="modal-body">
               <form>
-              <!-- (submit)="saveaddress_pending(pending) -->
                 <label for="name">Name:</label>
                 <input id="name" [(ngModel)]="pending.name" name="name" type="text" />
 
@@ -57,7 +56,6 @@
                 <button style="margin: auto; margin-top: 20px;" (click)="add_and_item(pending,orders)">Submit</button>
 
               </form>
-              <!-- <button style="margin: auto; margin-top: 20px;" type="submit">Submit</button> -->
 
             </div>
 
@@ -86,9 +84,6 @@
           <button id="button_click" style="margin-top: 19px;" (click)="removeSelected(item.id)">cancel</button>
 
         </div>
-
-        <!-- <div style="width: 150px;"  class="col-4 buttons">
-        </div> -->
       </div>
     </div>
   </div>
